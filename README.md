@@ -11,16 +11,16 @@ Function split each side by half for next manipulations in program:
  - left value: this is right side of the messsage which would be used later as left side of cryptomessage
  - right value: this is left side of the messsage which would be used later as right side of cryptomessage
 
-# Left value
+## Left value
 
 It stay same
 
-# Right value
+## Right value
 
 This value would be chnaged specific way. First we take left value and use it in function where it would be changed. 
 Here we xor cryptokey with left value. Next xor with right value.
 
-# Final
+## Final
 
 We combine values.
 
