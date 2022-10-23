@@ -1,9 +1,9 @@
 fn fiestal(message: &mut u64,key: &mut u16,round:i32){
     //Each round key would be xored
     *key ^= 0b00000001;
-    //Right side of message which would be taken from left
-    let left = ((*message << 8) as u16)>> 8;
     //Left side of message which would be taken from right
+    let left = ((*message << 8) as u16)>> 8;
+    //Right side of message which would be taken from left
     let mut right = (*message >> 8) as u16;
     //Right side is placed in function for xoring with key
     let mut function = left;
